@@ -20,7 +20,7 @@ Array.prototype.meinFilter = function (callback) {
 };
 
 let users = [
-    {name: 'vasya', age: 31, status: false},
+    {naJme: 'vasya', age: 31, status: false},
     {name: 'petya', age: 30, status: true},
     {name: 'kolya', age: 29, status: true},
     {name: 'olya', age: 28, status: false},
