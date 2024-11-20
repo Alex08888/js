@@ -1,7 +1,7 @@
 function cloneFunc(object) {
     if (object) {
         let functions = [];
-        for (const key in object) {
+        for (const obj[key] in object) {
             if (typeof [key] === 'function') {
                 let cloF = [key].bind({});
                 functions.push({cloF, key})
