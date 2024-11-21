@@ -1,4 +1,4 @@
-let okTenCourses = [
+let oktenCourses = [
     {title: 'JavaScript Complex', monthDuration: 5},
     {title: 'Java Complex', monthDuration: 6},
     {title: 'Python Complex', monthDuration: 6},
@@ -6,8 +6,13 @@ let okTenCourses = [
     {title: 'FullStack', monthDuration: 7},
     {title: 'Frontend', monthDuration: 4}
 ];
-console.log(okTenCourses.map((course, index) => ({id: index + 1, ...course})));
 
+let ol = document.createElement('ol');
 
+for (const courses of oktenCourses) {
+    const li=document.createElement('li')
+    li.innerText = `${courses.title} - ${courses.monthDuration} months`;
+    ol.appendChild(li);
+}
 
-
+document.body.appendChild(ol);

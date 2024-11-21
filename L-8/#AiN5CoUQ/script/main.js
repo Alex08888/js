@@ -30,3 +30,27 @@ const suspectObj = {
 const suspectObj1 = cloneFunc(suspectObj)
 console.log(suspectObj)
 console.log(suspectObj1)
+
+
+
+// function cloner(obj) {
+//     if (!obj) {
+//         console.log('custom Error')
+//         return;
+//     }
+//
+//     const functions = [];
+//     for (const key in obj) {
+//         if (typeof obj[key] !== 'function') continue;
+//
+//         const functionClone = obj[key].bind({});
+//         functions.push({functionClone, key});
+//     }
+//
+//     const cloneObj = JSON.parse(JSON.stringify(obj));
+//     for (const func of functions) {
+//         cloneObj[func.key] = func.functionClone;
+//     }
+//
+//     return cloneObj;
+// }
