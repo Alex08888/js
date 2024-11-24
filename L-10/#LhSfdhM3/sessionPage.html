@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sessionList</title>
+</head>
+<body>
+
+
+<script>
+    const storage = JSON.parse(localStorage.getItem('data'));
+    const paragraphList = document.createElement('div');
+    storage.forEach((item) => {
+        const sessionItem = document.createElement('p')
+        sessionItem.textContent = `${item}`;
+        paragraphList.appendChild(sessionItem);
+    });
+    document.body.appendChild(paragraphList)
+
+</script>
+</body>
+</html>
